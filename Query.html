@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query SAffo</title>
+    <link rel="stylesheet" href="Query.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="title">Enter Your Query</span>
+            <div class="buttons">
+                <button class="save"><i class="fa fa-save"></i>Save</button>
+                <button class="clear">Clear</button>
+                <button class="refresh">Refresh</button>
+                <button class="exit">Exit</button>
+            </div>
+        </div>
+        <div class="form">
+            <form>
+                <label class="">From Date</label>
+                <input type="text" id="txtFrDate"
+                    class="form-control ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-maxlength"
+                    maxlength="10" placeholder="dd/MM/yyyy" isrequired="Y" validateasdate="Y"
+                    msg="Please Enter From Date">
+
+                <label for="toDate">To Date</label>
+                <input type="text" id="txtToDate" ng-model="EmpQry_Ent.ToDate"
+                    class="form-control ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-maxlength"
+                    maxlength="10" placeholder="dd/MM/yyyy" isrequired="Y" validateasdate="Y"
+                    msg="Please Enter To Date">
+
+                <label for="Query">Query</label>
+                <textarea id="txtQry" ng-model="EmpQry_Ent.Qry" rows="5"
+                    class="form-control ng-pristine ng-valid ng-empty ng-touched" placeholder="Query" isrequired="Y"
+                    msg="Please Enter Your Query"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
